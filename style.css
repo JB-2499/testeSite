@@ -8,38 +8,73 @@ body {
   background-color: rgb(160, 46, 46);
   width: 75%;
   box-sizing: border-box;
-  text-align: center;
   margin: auto;
   padding: 20px;
   border:rgb(184, 53, 53) 5px solid;
 }
 
-.main-aside h2 {
+.autoria{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+}
+
+.autoria h2 {
   text-align: right;
 }
 
-.main-aside ul{
+.autoria ul{
   list-style: none;
   text-align: right;
   padding: 0;
 }
 
-.main-aside ul a {
+.autoria ul a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
 
-.main-aside ul a:hover {
+.autoria ul a:hover {
   color: rgb(43, 43, 43);
   text-decoration: underline;
 }
 
-.main-form {
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.article {
+  margin-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: rgb(160, 46, 46);
   border:rgb(184, 53, 53) 5px solid;
-  width: fit-content;
+  width: 40%;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  min-width: 0;
+  height: 284px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.box {
+  margin-top: 5px;
+  box-sizing: border-box;
+  width: 40%;
+}
+
+.main-form {
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgb(160, 46, 46);
+  border:rgb(184, 53, 53) 5px solid;
+  margin: auto;
 }
 
 .form-group {
@@ -48,18 +83,22 @@ body {
 
 .main-form .form-group label {
   display: block;
+  text-align: left;
 }
 
 .main-form .form-group input {
   padding: 5px;
   color: rgb(43, 43, 43);
   background-color: rgb(167, 157, 157);
+  border: none;
+  width: 100%;
 }
 
 .main-form .form-group select {
   padding: 5px;
   color: rgb(43, 43, 43);
   background-color: rgb(167, 157, 157);
+  text-align: left;
 }
 
 .main-form button {
