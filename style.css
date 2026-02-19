@@ -1,16 +1,26 @@
+:root {
+  --bg-body: #df2828;
+  --bg-primary: rgb(160, 46, 46);
+  --border-primary: rgb(184, 53, 53);
+  --text-dark: black;
+  --bg-input: rgb(167, 157, 157);
+  --hover-color: rgb(43, 43, 43);
+}
+
 body {
     font-family: ibm-plex-mono, monospace;
-    background-color: #df2828;
+    background-color: var(--bg-body);
+    color: var(--text-dark);
     font-size: 20px;
 }
 
 .container {
-  background-color: rgb(160, 46, 46);
+  background-color: var(--bg-primary);
   width: 75%;
   box-sizing: border-box;
   margin: auto;
   padding: 20px;
-  border:rgb(184, 53, 53) 5px solid;
+  border: var(--border-primary) 5px solid;
 }
 
 .autoria{
@@ -36,7 +46,7 @@ body {
 }
 
 .autoria ul a:hover {
-  color: rgb(43, 43, 43);
+  color: var(--hover-color);
   text-decoration: underline;
 }
 
@@ -51,8 +61,8 @@ body {
   margin-top: 5px;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(160, 46, 46);
-  border:rgb(184, 53, 53) 5px solid;
+  background-color: var(--bg-primary);
+  border: var(--border-primary) 5px solid;
   width: 40%;
   box-sizing: border-box;
   word-wrap: break-word;
@@ -72,8 +82,8 @@ body {
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: rgb(160, 46, 46);
-  border:rgb(184, 53, 53) 5px solid;
+  background-color: var(--bg-primary);
+  border: var(--border-primary) 5px solid;
   margin: auto;
 }
 
