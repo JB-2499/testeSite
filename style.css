@@ -3,9 +3,10 @@
   --bg-primary: rgb(46, 46, 46);
   --border-primary: rgb(46, 46, 46);
   --text-dark: rgb(255, 255, 255);
-  --bg-input: rgb(167, 157, 157);
+  --bg-input: rgb(226, 226, 226);
   --hover-color: rgb(214, 93, 93);
   --link-color: white;
+  --input-color: black;
   --width: 80%;
 }
 
@@ -13,10 +14,14 @@ body {
     font-family: ibm-plex-mono, monospace;
     background-color: var(--bg-body);
     color: var(--text-dark);
-    font-size: 15px;
+    font-size: 12;
+    line-height: 1.5;
 }
 
-.container {
+
+
+/* Header */
+.header {
   background-color: var(--bg-primary);
   box-sizing: border-box;
   margin: auto;
@@ -25,26 +30,29 @@ body {
   width: var(--width);
 }
 
-.container h1 {
+.header h1 {
   text-align: center;
 }
 
-.container p {
+.header p {
   padding-left: 20px;
 }
 
+
+
+/* Autoria */
 .autoria{
-  text-align: right;
+  text-align: left;
   padding: 10px;
 }
 
 .autoria h2 {
-  text-align: right;
+  text-align: left;
 }
 
 .autoria ul{
   list-style: none;
-  text-align: right;
+  text-align: left;
   padding: 0;
 }
 
@@ -58,6 +66,9 @@ body {
   text-decoration: underline;
 }
 
+
+
+/* Content */
 .content {
   box-sizing: border-box;
   width: var(--width);
@@ -77,7 +88,6 @@ body {
   padding-right: 20px;
   background-color: var(--bg-primary);
   border: var(--border-primary) 5px solid;
-  width: 65%;
   box-sizing: border-box;
   word-wrap: break-word;
   min-width: 0;
@@ -85,15 +95,20 @@ body {
   overflow-y: auto;
   overflow-x: hidden;
   text-align: justify;
+  flex: 7;
 }
 
 .box {
   box-sizing: border-box;
-  width: 35%;
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 
+
+
+/* Aside */
+/* Form */
 .main-form {
   text-align: center;
   padding-left: 20px;
@@ -107,6 +122,8 @@ body {
   padding-bottom: 10px;
 }
 
+
+/* Links */
 .aside {
   margin-top: 5px;
   height: 725px;
@@ -118,8 +135,8 @@ body {
 }
 
 .aside ul {
-  list-style: none;
-  text-align: center;
+  text-align: left;
+  list-style-position: inside;
   padding: 0;
 }
 
@@ -133,6 +150,8 @@ body {
   text-decoration: underline;
 }
 
+
+/* Form */
 .main-form .form-group label {
   display: block;
   text-align: left;
@@ -140,23 +159,23 @@ body {
 
 .main-form .form-group input {
   padding: 5px;
-  color: rgb(43, 43, 43);
-  background-color: rgb(167, 157, 157);
+  color: var(--input-color);
+  background-color: var(--bg-input);
   border: none;
   width: 100%;
 }
 
 .main-form .form-group select {
   padding: 5px;
-  color: rgb(43, 43, 43);
-  background-color: rgb(167, 157, 157);
+  color: var(--input-color);
+  background-color: var(--bg-input);
   text-align: left;
 }
 
 .main-form button {
   padding: 10px;
-  color: rgb(43, 43, 43);
-  background-color: rgb(167, 157, 157);
+  color: var(--input-color);
+  background-color: var(--bg-input);
   border: none;
 }
 
@@ -165,4 +184,22 @@ body {
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#projeto_ficheiro {
+  height: auto;
+  display: block;
+  margin: 10px auto;
+  max-width: 90%;
+}
+
+.footer {
+  background-color: var(--bg-primary);
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 20px;
+  border: var(--border-primary) 5px solid;
+  width: var(--width);
 }
